@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+
+<body>
+
+    <fieldset>
+        <legend>Cadastro</legend>
+
+        <form action="" method="post" enctype="multipart/form-data">
+
+            <label>
+                <p>Nome:</p>
+                <input type="text" name="nome" required>
+            </label>
+       
+            <label>
+                <p>Email:</p>
+                <input type="email" name="email" autocomplete="email" required>
+            </label>
+
+           
+            <label>
+                <p> Idade:</p>
+                <input type="number" min="12" name="idade" required step="1">
+            </label>
+
+            <label>
+                <p>Data de nascimento:</p>
+                <input type="date" name="data-de-nascimento" required>
+            </label>
+
+            <label>
+                <p> Onde você possui conta:</p>
+                <input type="checkbox" name="instagram" required>Instagram
+                <input type="checkbox" name="facebook" required>Facebook
+                <input type="checkbox" name="twitter" required>Twitter
+                <input type="checkbox" name="youtube" required>Youtube
+            </label>
+
+            <label>
+                <p> Sexo:</p>
+                <input type="radio" name="sexo" required> Masculino
+                <input type="radio" name="sexo" required> Feminino
+            </label>
+
+            <label>
+                <p> Cor dos olhos:</p> 
+                <input type="color" value="#1E90FF" name="cor-dos-olhos" required>
+            </label>
+
+            <label>
+                <P> Biografia:</P>
+                <textarea name="biografia" required></textarea>
+            </label>
+
+           
+            <label>
+                <p>Foto de perfil:</p>
+                <input type="file" accept="image/*" name="foto-de-perfil" required>
+            </label>
+            
+
+            <label>
+                <p> Telefone:</p>
+                <input type="tel" name="telefone" required>
+            </label>
+
+            <label>
+                <p>Link do perfil do Linkedin:</p>
+                <input type="url" name="perfil-linkedin" required>
+            </label>
+
+            <lable>
+                <p>Senha:</p>
+                <input type="password" minlength="6" maxlength="8" name="senha" required>
+            </lable>
+
+            <br>
+            <br>
+            <button type="reset">Limpar</button>
+
+            <button type="submit"> Enviar dados</button>
+        </form>
+
+
+
+    </fieldset>
+
+
+</body>
+
+</html>
